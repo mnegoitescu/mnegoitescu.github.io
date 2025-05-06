@@ -11,6 +11,7 @@ cat <<EOF
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>artă | negoitescu mario</title>
+    <link rel="shortcut icon" href="./pics/favicon.ico" />
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
