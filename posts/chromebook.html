@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Linux pe un Chromebook (+ XFCE) | negoitescu mario</title>
+	<link rel="shortcut icon" href="../res/favicon.ico">
+	<link href="../style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+	<div id="main">
+	<p>negoitescu mario &mdash; <a href="../">negoitescu.xyz</a></p>
+	<h1>Linux pe un Chromebook (+ XFCE)</h1>
+	<nav id="TOC" role="doc-toc">
+		<h2 id="toc-title">Cuprins</h2>
+		<ul>
+<li><a href="#xfce-pe-un-chromebook" id="toc-xfce-pe-un-chromebook">XFCE
+pe un Chromebook</a></li>
+</ul>
+	</nav>
+	<p>Recent, am decis să cumpăr un laptop 2-în-1 cu intenția de-al folosi
+pe post de tabletă/netbook pentru facultate, notițe și desene. După ceva
+căutare online, am decis să cumpăr un Chromebook, știind că majoritatea
+acestora pot rula Linux (cel puțin, cele care au o arhitectură x86).
+Modelul pe care l-am ales este un <strong>Asus CR1100FKA</strong>,
+despre care nu am găsit multe informații online, dar care apărea în
+lista de dispozitive care suportă <a
+href="https://docs.mrchromebox.tech/docs/supported-devices.html">MrChromebox</a>,
+bootloaderul care permite instalarea Linux pe aceste calculatoare.</p>
+<div class="pic">
+<p><img src="../res/asus-cr1100fka.jpg"
+title="Asus CR1100FKA - www.asus.com" /></p>
+<p>Imagine preluată de pe <a
+href="https://www.asus.com/">www.asus.com</a></p>
+</div>
+<p>La prima vedere, laptopul pare foarte bine construit. Are un exterior
+din plastic rigid care pare că ar rezista majoritatea șocurilor (totuși,
+nu voi verifica asta ;) ). Tastatura nu este nimic special dar are un
+clic destul de bun, iar touchpadul este destul de mic, dar utilizabil.
+De-asemenea, are un număr surprinzător de porturi, inclusiv unul pentru
+introducerea unui card SD, care m-a surprins foarte plăcut. Are două
+porturi USB Type C, care pot fi folosite pentru încărcarea laptopului de
+pe ambele părți, ceea ce a fost mai util decât aș fi crezut.</p>
+<p>Ceea ce este cel mai important la acest laptop este, totuși, ecranul
+care permite atât input tactil cât și folosirea unui stylus, ceea ce îl
+face ideal pentru luarea de notițe sau desenarea unor schițe.</p>
+<p>Desigur, singurul lucru care nu mi-a plăcut la acest laptop a fost
+sistemul său de operare preinstalat, ChromeOS, care (în afară de a-și
+spiona utilizatorii) nici măcar nu permitea folosirea aplicației de
+desen în modul offline. Așadar, am început destul de repede să instalez
+Linux pe el.</p>
+<p>Procesul a fost surprinzător de ușor, scriptul menționat mai sus
+(MrChromebox) instalează o versiune a <a
+href="https://www.coreboot.org/">Coreboot</a> care permite rularea de pe
+un stick USB sau card SD, iar instalarea unui sistem de operare a decurs
+ca în cazul oricărui alt laptop sau calculator obișnuit. Am trecut prin
+câteva încercări rulând mai multe distribuții de Linux, până când am
+decis să rulez <a href="https://fedoraproject.org/">Fedora Linux</a> cu
+desktopul <a href="https://xfce.org/">XFCE</a>. Sistemul este
+surprinzător de stabil și nu am avut deloc probleme legate de
+software.</p>
+<p>Prima dată când am instalat Linux pe acest Chromebook, am fost
+surprins de faptul că aproape totul funcționează fără a mai trebui să
+instalez un pachet sau driver suplimentar. Singurul lucru care a trebuit
+rezolvat după instalare a fost ieșirea audio, care poate fi reparată
+selectând ieșirea corectă din setările KDE (selectați
+<code>Jasper Lake HD Audio Pro</code> sau <code>[...] Pro 1</code>
+pentru căști). Atât ecranul tactil + stylus cât și modul tabletă
+funcționează perfect, inclusiv rotirea automată a ecranului. Ambele
+camere web sunt recunoscute (acest laptop are și o cameră exterioară pe
+care o poți folosi în modul tabletă), microfonul funcționează fără
+probleme, iar sistemul este foarte stabil. Procesul a fost identic și
+pentru noua instalare, iar rezultatul la fel de plăcut. Scriu chiar
+acest articol de pe acest Chromebook!</p>
+<h3 id="xfce-pe-un-chromebook">XFCE pe un Chromebook</h3>
+<p>Desigur, XFCE nu are toate funcțiile pe care le are un desktop mai
+„modern” cum ar fi KDE sau GNOME, dar este surprinzător de rapid și ușor
+de folosit. Pe parcurs, a devenit desktopul meu preferat.</p>
+<div class="pic">
+<p><img src="../res/asus-laptop.jpg"
+title="Laptopul după instalarea Linux" /></p>
+<p>Laptopul după instalarea GNU/Linux</p>
+</div>
+<p>Pentru luarea de notițe, am încercat câteva programe până am ajuns la
+<a href="https://github.com/xournalpp/xournalpp">Xournal++</a>, care
+recunoaște stylusul fără probleme și are toate uneltele de care am
+nevoie.</p>
+<div class="pic">
+<p><img src="../res/asus-xournal.jpg"
+title="Programul Xournal++ pentru notițe" /></p>
+<p>Programul Xournal++ pentru notițe, desene și adnotarea PDF-urilor</p>
+</div>
+<hr />
+<p>În concluzie, sunt foarte mulțumit de această achiziție, iar
+instalarea Linux pe un astfel de laptop îi arată potențialul adevărat.
+Procesorul său (intel Celeron) pare destul de bun pentru a rula
+aplicații grafice sau de birou ușoare și chiar unele jocuri simple
+(personal, am încercat doar Mahjongg și Tetris :p).</p>
+	<hr/>
+	<p>email: <code>negoitescu [arond] tutamail [punct] com</code></p>
+	</div>
+</body>
+</html>

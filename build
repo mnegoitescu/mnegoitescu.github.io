@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Simple sitegen powered by Pandoc
+# tmp/		- templates
+# pages/	- site content (in markdown)
+
+export updated=$(date '+%A, %d %B %Y')
+# Pagini simple
+echo "[RUN] Building simple pages..."
+for page in ./pages/*; do
+	# Obține numele simplu (fără locație)
+	barename="$(basename $page)"
+	# Schimbă extensia în .html
+	htmlpage="${barename%.md}.html"
+	# Verifică dacă este un fișier
+	if [ -f "$page" ]; then
+		printf "\t%s\n" "Building $barename..."
+		pandoc -s --toc --template=tmp/page.html "$page" -o "$htmlpage"
+	else
+		printf "%s\n" "INFO: Skipping $page (not a file)."
+	fi
+done
+
+# Postări
+echo "[RUN] Buildings posts..."
+[ -d ./posts ] && rm -r posts && mkdir posts
+export articles=""
+for post in $(find ./pages/posts/ -type f | sort -r); do
+	# idem.
+	barename="$(basename $post)"
+	out="posts/${barename%.md}.html"
+	printf "\t%s\n" "Building $barename..."
+	pandoc -s --toc --template=tmp/post.html "$post" -o "$out"
+	# Dar generează și o listă
+	# - Obține titlul și data... (sunt întotdeauna a doua, respectiv a treia linie)
+	ptitle="$(sed '2q;d' $post | sed 's/title: //')"
+	pdate="$(sed '3q;d' $post | sed 's/date: //')"
+	export articles="$articles<li><p><a href="$out"><em>$ptitle</em></a><br/>$pdate</p></li>"
+done
+
+# Index
+echo "[RUN] Building index.html..."
+envsubst < tmp/index.html > index.html
+#unset -z articles
+printf "%s\n" "Done!"
