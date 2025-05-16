@@ -41,7 +41,8 @@ tr:nth-child(even) { background-color: var(--bd); }
     text-align: center;
     font-style: italic;
 }
-.pic img {
+img, .pic img {
+    border: 2px solid var(--bd);
     transition: transform .0s;
     width: 40%
 }
