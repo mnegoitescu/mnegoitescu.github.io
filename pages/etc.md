@@ -27,6 +27,8 @@ title: etc
 
 ## Creștinism {#crestinism}
 
+- [OrthodoxWiki](https://ro.orthodoxwiki.org/Pagina_principal%C4%83)\
+  Articole și texte despre credința ortodoxă și sfinți, în mai multe limbi
 - [ResurseCreșține.ro](https://www.resursecrestine.ro/)\
   Articole despre credință, resurse și unelte pentru lectura Bibliei
 - [BibleProject](https://bibleproject.com/Romanian/)\
