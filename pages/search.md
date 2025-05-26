@@ -11,7 +11,8 @@ title: search page
 
 
 ::: links
-[site](https://negoitescu.xyz) [art](https://cara.app/negoitescu)
-[notes](https://negoitescu.xyz/notes) [git](https://github.com/mnegoitescu)
+[site](https://negoitescu.xyz)  [art](https://cara.app/negoitescu)
+[notes](https://negoitescu.xyz/notes)  [git](https://github.com/mnegoitescu)
+[pomodoro](https://pomofocus.io/)  [dict](https://hallo.ro)
 :::
 
